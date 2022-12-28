@@ -1,0 +1,36 @@
+.mainDiv {
+    background-color: white;
+    border-bottom: 0.2rem solid rgb(132 135 237);
+    box-shadow: 0 0.2rem 0.3rem rgb(132 135 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 20%;
+    height: 20%
+}
+
+.primaryNav {
+    display: flex;
+    align-items: center;
+}
+
+.divLinks {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.divLinks li {
+    margin: 0 1rem;
+}
+
+.divLinks a {
+    text-decoration: none;
+    color: rgb(125 126 179);
+    font-weight: 600;
+}

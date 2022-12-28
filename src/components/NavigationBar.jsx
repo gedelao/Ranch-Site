@@ -1,20 +1,36 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import styles from "./stylesheets/Navigation.module.css";
 
 const NavigationBar = () => {
   return (
-    <div style={{background: "pink", borderBottom: "solid pink"}}>
-      <Nav style={{paddingTop: "1rem", display: "flex"}} className="justify-content-end" activeKey="/home">
-        <img style={{width: "10%"}} src='https://www.freeiconspng.com/thumbs/cat-png/cat-png-17.png' alt="img of a cow"></img>
-        <Nav.Item>
-          <Nav.Link href="/home">Home</Nav.Link>
-          <Nav.Link eventKey="link-1">Breeds</Nav.Link>
-          <Nav.Link eventKey="link-2">About Us</Nav.Link>
-            <Nav.Link eventKey="link-3">Thank You</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </div>
+<>
+  {/* <div style={{width: "100%"}}>
+  <h1 style={{textAlign: "left"}}>
+  hello
+  <span style={{float: "right"}}>
+    <a href='/'>Hello</a>
+    <a href='/'>Hello2</a>
+    <a href='/'>Hello3</a>
+  </span>
+  </h1>
+  </div> */}
+  <div className={styles.mainDiv}>
+  <div className={styles.logo}>
+    <img src="https://w7.pngwing.com/pngs/174/600/png-transparent-cat-animal-lovely-cat.png" alt="" />
+  </div>
+    <nav className={styles.primaryNav}>
+  <ul className={styles.divLinks}>
+    <li><a href="/Home">Home</a></li>
+    <li><a href="/Livestock">LiveStock</a></li>
+    <li><a href="/AboutUs">About Us</a></li>
+    <li><a href="/ThankYou"> Thank You</a></li>
+  </ul>
+    </nav>
+  </div>
+</>
   )
 }
 
 export default NavigationBar;
+
