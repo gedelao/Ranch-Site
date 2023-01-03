@@ -1,0 +1,36 @@
+.aboutContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.mainAboutSectionGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 30rem;
+    margin: 3rem;
+}
+
+.mainAboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainAboutText h2 {
+    font-weight: 700;
+    font-family: auto;
+    font-size: 3.5rem;
+}
+
+.mainAboutText p {
+    font-size: 1.5rem;
+}
+
+.mainAboutPicture {
+    background-image: url("https: //png.pngtree.com/png-vector/20201229/ourmid/pngtree-a-british-short-blue-and-white-cat-png-image_2654518.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: blue;
+}

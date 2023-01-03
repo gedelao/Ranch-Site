@@ -5,16 +5,6 @@ import styles from "./stylesheets/Navigation.module.css";
 const NavigationBar = () => {
   return (
 <>
-  {/* <div style={{width: "100%"}}>
-  <h1 style={{textAlign: "left"}}>
-  hello
-  <span style={{float: "right"}}>
-    <a href='/'>Hello</a>
-    <a href='/'>Hello2</a>
-    <a href='/'>Hello3</a>
-  </span>
-  </h1>
-  </div> */}
   <div className={styles.mainDiv}>
   <div className={styles.logo}>
     <img src="https://w7.pngwing.com/pngs/174/600/png-transparent-cat-animal-lovely-cat.png" alt="" />
