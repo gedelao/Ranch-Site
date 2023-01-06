@@ -1,3 +1,5 @@
+/* About the Rhodes */
+
 .aboutContainer {
     height: 100%;
     width: 100%;
@@ -33,4 +35,81 @@
     background-size: cover;
     background-position: 50% 50%;
     background-color: blue;
+}
+
+/* About Extra */
+
+.specialtyContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.specialtyHeader {
+    text-align: center;
+    font-size: 4rem;
+    font-family: auto;
+    font-weight: 700;
+}
+
+.specialtyGrid {
+    gap: 4rem;
+    display: grid;
+    justify-content: center;
+}
+
+.specialtyCard {}
+
+.specialtyCardBlue {}
+
+.specialtyCardBlue h2 {}
+
+.specialtyCard a {
+    color: blue;
+}
+
+.specialtyCardBlue a {
+    color: white;
+}
+
+.specialtyCardBlue span {
+    color: #ffffff;
+}
+
+.specialtyCardBlue,
+.specialtyCard {
+    border: 2px solid black;
+    text-align: center;
+    height: 40rem;
+    width: 40rem;
+
+}
+
+.image {
+    background-color: #155ED0;
+    height: 20rem;
+}
+
+.image h1 {
+    padding-top: 8rem;
+}
+
+.aboutUs {
+    height: 5rem;
+}
+
+.aboutUs h1 {
+    padding-top: 1rem;
+}
+
+
+/* media screen */
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+
+    .specialtyCardBlue,
+    .specialtyCard {
+        height: 100%;
+        width: 100%;
+    }
+
 }
