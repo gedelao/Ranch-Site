@@ -7,9 +7,14 @@
     align-items: center;
 }
 
+.logo {
+    height: 7rem;
+    width: 10rem;
+}
+
 .logo img {
-    width: 20%;
-    height: 20%
+    width: 100%;
+    height: 100%
 }
 
 .primaryNav {
@@ -36,12 +41,18 @@ div.navigation {
 
 li {
     padding: 0.5rem;
+    margin: 0.5rem;
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (min-width: 280px) and (max-width: 911px) {
 
-    img {
-        display: none;
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .divLinks li {
+        margin: 0;
     }
 
 
