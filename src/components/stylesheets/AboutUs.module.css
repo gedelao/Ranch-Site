@@ -28,7 +28,7 @@
     font-size: 1.5rem;
 }
 
-.hiddenText p {
+.hiddenText {
     display: none;
 }
 
@@ -197,5 +197,49 @@
 
     p {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 912px) and (max-width: 1138px) {
+
+    .mainAboutSectionGrid {
+        display: block;
+    }
+
+    img {
+        display: block;
+    }
+
+    .specialtyHeader {
+        display: none;
+    }
+
+    .mainAboutText {
+        display: grid;
+    }
+
+    .mainAboutText h2 {
+        /* display: grid; */
+    }
+
+    .mainAboutText p {
+        display: none;
+    }
+
+    .mainAboutPicture {
+        width: auto;
+        height: auto;
+    }
+
+
+    .hiddenText {
+        display: grid;
+        text-align: center;
+    }
+
+    .hiddenText h2 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 2.5rem;
     }
 }
