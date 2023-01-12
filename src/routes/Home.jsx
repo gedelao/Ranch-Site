@@ -11,8 +11,8 @@ function Home() {
         </h1>
         </div>
       </div>
-      <div>
-      
+      <div className={styles.box1}>
+      <h1 style={{ display: "grid"  }}>hello</h1>
       </div>
     </div>
   )
