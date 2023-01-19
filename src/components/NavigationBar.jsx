@@ -10,7 +10,7 @@ const NavigationBar = () => {
   </div>
     <nav className={styles.primaryNav}>
   <ul className={styles.divLinks}>
-    <li><a href="/Home">Home</a></li>
+    <li><a href="/">Home</a></li>
     <li><a href="/Livestock">LiveStock</a></li>
     <li><a href="/AboutUs">About Us</a></li>
     <li><a href="/ThankYou"> Thank You</a></li>
