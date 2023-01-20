@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import ThankYou from "./routes/ThankYou";
 import LiveStock from "./routes/LiveStock";
 import AboutUs from "./routes/AboutUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/LiveSock" element={<LiveStock />} />
+        <Route path="/LiveStock" element={<LiveStock />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/ThankYou" element={<ThankYou />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

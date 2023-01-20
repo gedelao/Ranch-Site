@@ -1,8 +1,10 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import styles from '../components/stylesheets/ThankYou.module.css'
 
 function ThankYou() {
   return (
+    <>
     <div>
       <div className={styles.title}>
         <div className={styles.titleDiv}>
@@ -21,6 +23,8 @@ function ThankYou() {
         </div>
       </div>
     </div>
+    {/* <Footer /> */}
+    </>
   )
 }
 

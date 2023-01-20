@@ -1,8 +1,10 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import styles from "../components/stylesheets/Home.module.css"
 
 function Home() {
   return (
+    <>
     <div className={styles.home}>
       <div className={styles.row}>
         <div className={styles.header}>
@@ -25,6 +27,7 @@ function Home() {
       </div>
     </div>
   </div>
+    </>
   )
 }
 

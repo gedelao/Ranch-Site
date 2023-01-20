@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import styles from '../components/stylesheets/AboutUs.module.css'
 
 function AboutUs() {
@@ -81,7 +82,6 @@ function AboutUs() {
       </div> 
     </div>
   </div>
-  
     </>
   )
 }
