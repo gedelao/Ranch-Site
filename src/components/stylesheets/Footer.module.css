@@ -3,16 +3,23 @@
     height: 100%;
 }
 
-.logo {
+.form {
     border: solid 0.2rem;
     margin-top: 3rem;
     height: 20rem;
 }
 
-.left {
-    margin-top: 4rem;
+.name {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
 }
 
-.left .header {
-    margin-top: 3rem;
+.name label {
+    padding-right: 1rem;
+}
+
+.name .firstName {
+    padding-right: 1rem;
 }

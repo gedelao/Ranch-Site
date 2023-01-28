@@ -4,18 +4,17 @@ import styles from '../components/stylesheets/Footer.module.css'
 function Footer() {
   return (
     <div className={styles.footer}>
-        <div className={styles.logo}>
-            <div className={styles.left}>
-                <h1>
-                    Hello
-                </h1>
-              <div>
-                <h1 className={styles.header}>
-                    hello
-                </h1>
+        <div className={styles.form}>
+            <div className={styles.name}>
+              <div className={styles.firstName}>
+            <label for="name">Your Name: </label>
+                <input type="text" name="name" id="name" required/>
+              </div>
+              <div className={styles.lastName}>
+                <input type="text" name="name" id="name" required/>
               </div>
             </div>
-
+            
         </div>
     </div>
   )
