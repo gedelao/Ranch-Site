@@ -1,61 +1,9 @@
-/* .footer {
-    border: solid 0.2rem;
-    margin-top: 3rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
+.footerHeader {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 3.5rem;
 }
-
-.form {
-
-} */
-
-/* .footer {
-    width: 100%;
-    height: 100%;
-}
-
-.form {
-    border: solid 0.2rem;
-    margin-top: 3rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-}
-
-.innerForm {
-    margin-top: 1rem;
-}
-
-.name {
-    display: flex;
-}
-
-.name label {
-    padding-right: 1rem;
-}
-
-.name .firstName {
-    padding-right: 1rem;
-}
-
-.email label {
-    padding-right: 1rem;
-}
-
-.email input {
-    margin-top: 1rem;
-    width: 24.2rem;
-}
-
-.phone label {
-    padding-right: 3rem;
-}
-
-.phone input {
-    margin-top: 1rem;
-    width: 24.2rem;
-} */
 
 .footer {
     border: solid 0.2rem;
@@ -69,21 +17,20 @@ input[type=text],
 select,
 textarea {
     width: 100%;
-    padding: 12px;
+    height: 3rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     resize: vertical;
 }
 
 input[type=submit] {
     background-color: #04AA6D;
     color: white;
-    padding: 12px 20px;
+    padding: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
@@ -92,6 +39,23 @@ input[type=submit]:hover {
 }
 
 .container {
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+label {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 280px) {
+    .footerHeader {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 414px) {
+    .footerHeader {
+        font-size: 2.4rem;
+    }
 }
