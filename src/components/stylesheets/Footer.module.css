@@ -2,7 +2,8 @@
     text-align: center;
     padding-bottom: 1rem;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 4rem;
+    color: white;
 }
 
 .footer {
@@ -14,6 +15,7 @@
 }
 
 input[type=text],
+input[type=email],
 select,
 textarea {
     width: 100%;
@@ -48,7 +50,7 @@ label {
     font-weight: 700;
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (max-width: 280px) {
     .footerHeader {
         font-size: 1.5rem;
     }
@@ -59,3 +61,41 @@ label {
         font-size: 2.4rem;
     }
 }
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.borderDiv {
+    border: solid;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 0.5em 1em;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
