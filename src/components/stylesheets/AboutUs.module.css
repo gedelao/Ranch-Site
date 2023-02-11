@@ -1,4 +1,4 @@
-/* About the Rhodes */
+/* About the Rhodes
 
 .aboutContainer {
     height: 100%;
@@ -45,7 +45,7 @@
 
 /* About Extra */
 
-.specialtyContainer {
+/* .specialtyContainer {
     height: 100%;
     width: 100%;
 }
@@ -102,12 +102,12 @@
 
 .aboutUs h1 {
     padding-top: 1rem;
-}
+}  */
 
 
 /* media screen */
 
-@media screen and (min-width: 280px) and (max-width: 911px) {
+/* @media screen and (min-width: 280px) and (max-width: 911px) {
     img {
         display: block;
     }
@@ -182,11 +182,11 @@
         ;
 
     }
-}
+} */
 
 /* media screen 768px */
 
-@media screen and (min-width: 768px) and (max-width: 911px) {
+/* @media screen and (min-width: 768px) and (max-width: 911px) {
     h1 {
         font-size: 3rem;
     }
@@ -220,7 +220,7 @@
 
     .mainAboutText h2 {
         /* display: grid; */
-    }
+/* }
 
     .mainAboutText p {
         display: none;
@@ -241,5 +241,202 @@
         text-align: center;
         padding-top: 1rem;
         font-size: 2.5rem;
+    }
+}  */
+
+/* .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0;
+}
+
+.mainAboutSectionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.mainAboutText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainAboutPicture {
+    position: relative;
+}
+
+.hiddenText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hiddenParagraph {
+    margin-top: 10px;
+}
+
+.specialtyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.specialtyHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.specialtyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+}
+
+.specialtyCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutUs {
+    margin-top: 20px;
+}
+
+.description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .mainAboutSectionGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .specialtyGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainAboutSectionGrid {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .image {
+        height: 150px;
+    }
+} */
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.mainAboutSectionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.mainAboutText h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.mainAboutPicture {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.mainAboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+.mainAboutPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hiddenText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.mainAboutPicture:hover .hiddenText {
+    visibility: visible;
+}
+
+.hiddenText h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.hiddenParagraph {
+    margin-top: 10px;
+}
+
+.hiddenParagraph p {
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .mainAboutSectionGrid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .mainAboutPicture,
+    .mainAboutText {
+        height: auto;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
     }
 }
