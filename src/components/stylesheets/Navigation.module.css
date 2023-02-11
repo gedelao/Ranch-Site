@@ -1,65 +1,124 @@
 .mainDiv {
-    background-color: white;
-    border-bottom: 0.2rem solid rgb(132 135 237);
-    box-shadow: 0 0.2rem 0.3rem rgb(132 135 237);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .logo {
-    height: 7rem;
-    width: 10rem;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 100%;
-    height: 100%
+    height: 40px;
+    margin: 0 10px;
 }
 
 .primaryNav {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+    .primaryNav {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+    }
+
+    .divLinks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.navOpen {
+    right: 0;
 }
 
 .divLinks {
     display: flex;
+    align-items: center;
     justify-content: center;
-    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     padding: 0;
 }
 
-div.navigation {
+.divLinks li {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
 }
 
-.divLinks a {
+.divLinks li a {
+    display: block;
+    color: white;
     text-decoration: none;
-    color: rgb(125 126 179);
-    font-weight: 600;
+    padding: 20px;
 }
 
-li {
-    padding: 0.5rem;
-    margin: 0.5rem;
+.toggleBtn {
+    cursor: pointer;
+    height: 60px;
+    padding: 10px 20px;
+    display: none;
 }
 
-@media screen and (min-width: 280px) and (max-width: 911px) {
+@media screen and (max-width: 991px) {
+    .toggleBtn {
+        display: block;
+    }
+}
+
+.toggleBtn span {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .mainDiv {
+        padding: 10px;
+    }
 
     .logo img {
-        height: 100%;
-        width: 100%;
+        height: 30px;
     }
 
-    .divLinks li {
-        margin: 0;
+    .toggleBtn span {
+        font-size: 20px;
     }
 
-
-}
-
-@media screen and (min-width: 912px) and (max-width: 1138px) {
-    .divLinks li {
-        font-size: 1.8rem;
+    .divLinks li a {
+        padding: 10px;
     }
 }

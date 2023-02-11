@@ -1,70 +1,51 @@
-.title {
-    border: 0.2rem solid;
-    background: mediumturquoise;
-    width: 100%;
-    height: 100%;
-}
-
-.titleDiv {
-    height: 15rem;
-}
-
-.titleDiv h1 {
-    font-size: 3rem;
-    color: antiquewhite;
-    text-align: center;
-    margin-top: 10rem;
-}
-
-.boxes {
+.container {
     display: flex;
-    justify-content: space-evenly;
-
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
 }
 
-.innerBoxes {
-    margin-top: 5rem;
-    border: 0.3rem solid;
-    width: 25%;
-    border-bottom-right-radius: 15%;
-    height: 20rem;
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
 }
 
-@media screen and (min-width: 280px) and (max-width: 411px) {
+.boxesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .titleDiv h1 {
-        font-size: 2.5rem;
 
-    }
+.box {
+    width: 100%;
+    max-width: 15rem;
+    height: 15rem;
+    background-color: lightgray;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem 0 4rem;
+}
 
-    .boxes {
-        display: grid;
-    }
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
 
-    .innerBoxes {
+@media (min-width: 768px) {
+    .box {
         width: 15rem;
         height: 15rem;
     }
 }
 
-@media screen and (min-width: 412px) and (max-width: 767px) {
-    .titleDiv h1 {
+@media screen and (min-width: 540px) {
+    .title {
         font-size: 2rem;
     }
 
-    .boxes {
-        display: grid;
-    }
-
-    .innerBoxes {
-        width: 20rem;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 912px) {
-    .innerBoxes {
-        margin-top: 5rem;
-        width: 15rem;
-        height: 14rem;
-    }
 }

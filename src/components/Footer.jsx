@@ -66,7 +66,7 @@ function Footer() {
     <input type="submit" value="Submit"/>
           </div>
         </div>
-       </form>
+      </form>
     </div>
   )
 }
