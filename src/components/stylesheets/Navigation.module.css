@@ -18,9 +18,14 @@
     align-items: center;
 }
 
+.logo a {
+    cursor: pointer;
+}
+
 .logo img {
     height: 40px;
     margin: 0 10px;
+    border-radius: 15%;
 }
 
 .primaryNav {

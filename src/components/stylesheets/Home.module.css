@@ -4,6 +4,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    margin-top: 3.5rem;
 }
 
 .header {
@@ -38,12 +39,11 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 3rem 0;
-    padding-left: 2vw;
 }
 
 .boxes {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
 
