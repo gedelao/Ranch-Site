@@ -4,7 +4,7 @@
     justify-content: space-between;
     background-color: #333;
     color: #fff;
-    height: 60px;
+    height: 50px;
     padding: 0 20px;
     position: fixed;
     width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .logo img {
-    height: 40px;
+    height: 30px;
     margin: 0 10px;
     border-radius: 15%;
 }
@@ -36,7 +36,7 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: -100%;
     width: 100%;
     height: 100%;
@@ -44,7 +44,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .primaryNav {
         position: relative;
         top: auto;
@@ -55,7 +55,7 @@
         display: flex;
     }
 
-    .divLinks {
+    css Copy code .divLinks {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 400px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -81,7 +81,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60px;
+    height: 50px;
     margin: 0;
     padding: 0;
 }
@@ -90,24 +90,15 @@
     display: block;
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .toggleBtn {
     cursor: pointer;
-    height: 60px;
+    height: 50px;
     padding: 10px 20px;
     display: none;
-}
-
-@media screen and (max-width: 991px) {
-    .toggleBtn {
-        display: block;
-    }
-}
-
-.toggleBtn span {
-    font-size: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -115,8 +106,12 @@
         padding: 10px;
     }
 
-    .logo img {
-        height: 30px;
+    css Copy code .logo img {
+        height: 20px;
+    }
+
+    .toggleBtn {
+        display: block;
     }
 
     .toggleBtn span {
@@ -124,6 +119,6 @@
     }
 
     .divLinks li a {
-        padding: 10px;
+        padding: 5px;
     }
 }

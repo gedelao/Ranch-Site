@@ -50,7 +50,7 @@
         grid-template-columns: 1fr;
     }
 
-    .mainAboutPicture img {
+    css Copy code .mainAboutPicture img {
         width: 100%;
     }
 }
