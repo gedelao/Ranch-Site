@@ -14,7 +14,7 @@ const Home = () => (
         <div className={styles.innerBoxes1}>
         <img
           className={styles.images}
-          src="https://www.humanesociety.org/sites/default/files/2018/06/cat-217679.jpg"
+          src="cows.jpeg"
           alt=""
           />
           <h1>Heifer</h1>
@@ -30,10 +30,10 @@ const Home = () => (
           <div className={styles.innerBoxes1}>
         <img
           className={styles.images}
-          src="https://www.humanesociety.org/sites/default/files/2018/06/cat-217679.jpg"
+          src="donkeys.jpeg"
           alt=""
         />
-          <h1>hello</h1>
+          <h1>Donkey</h1>
           </div>
       </div>
     </div>
