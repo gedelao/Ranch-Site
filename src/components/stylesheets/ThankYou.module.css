@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin-top: 9rem;
+    margin-top: 8rem;
 }
 
 .title {
@@ -14,7 +14,6 @@
     display: flex;
     justify-content: space-evenly;
 }
-
 
 .box {
     width: 100%;
@@ -34,16 +33,15 @@ h1 {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    .boxesContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-gap: 16px;
+        align-self: center;
+    }
+
     .box {
-        width: 15rem;
-        height: 15rem;
+        border-radius: 0rem 4rem 0 4rem;
     }
-}
-
-@media screen and (min-width: 540px) {
-    .title {
-        font-size: 2rem;
-    }
-
 }
