@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+body {
+  background-color: rgb(255 218 213) !important;
+}
+
+
+.livestockCard{
+  background-color:#b5ccd6;
+  height: 16rem;
+  width: 12rem;
+  border-radius: 18px;
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: 5px 10px 16px black
+}
+
+.livestock-image{
+  width: 128px;
+  height: 83px;
+  border-radius:7px 7px 0px 0px;
+
+}
+
+.livestock-list{
+  display: flex;
+  justify-content: space-around;
+
+}
+.livestock-grid{
+  background-color:#003049;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr); 
+  gap:6rem;
+  box-shadow: 7px 4px 9px;
+  border-radius: 12px;
+}
+
+.livestock{
+  height: 198px;
+  width: 128px;
+  background-color: #eae2b7;
+  border-radius: 8px;
+  box-shadow: 4px 2px 13px -2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.livestock div{
+  padding:5px;
+}
+
+
+.livestock :last-child{
+  text-align:center;
+}
+
+
+@media screen and (max-width:900px){
+  .livestock-grid{
+  grid-template-columns:repeat(2, 1fr)
+  }
+}
+@media screen and (max-width:600px){
+  .livestock-grid{
+  grid-template-columns:repeat(1, 1fr)
+  }
+}
