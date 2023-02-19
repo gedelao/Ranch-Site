@@ -6,18 +6,26 @@ import ThankYou from "./routes/ThankYou";
 import LiveStock from "./routes/LiveStock";
 import AboutUs from "./routes/AboutUs";
 import Footer from "./components/Footer";
+import LivestockList from "./components/LivestockList";
+import {LivestockProvider} from './context/LivestockContext'
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/LiveStock" element={<LiveStock />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/ThankYou" element={<ThankYou />} />
-      </Routes>
-      <Footer />
+      <LivestockProvider>
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<>
+            <Home />
+            <LivestockList/>
+          </>
+        }/>
+          <Route path="/LiveStock" element={<LiveStock />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/ThankYou" element={<ThankYou />} />
+        </Routes>
+        <Footer />
+      </LivestockProvider>  
     </div>
   );
 }
